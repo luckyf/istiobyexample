@@ -32,7 +32,7 @@
 <pre tabindex="0"><code>$ curl http://server:80
 
 Hello World! /$
-</code></pre><p>To enforce mTLS such that <em>only</em> TLS traffic is accepted by all services in all Istio-injected namespacess, we&rsquo;ll apply the following <a href="https://istio.io/docs/reference/config/security/peer_authentication/"target="_blank">Istio <code>PeerAuthentication</code> resource</a>:</p>
+</code></pre><p>To enforce mTLS such that <em>only</em> TLS traffic is accepted by all services in all Istio-injected namespaces, we&rsquo;ll apply the following <a href="https://istio.io/docs/reference/config/security/peer_authentication/"target="_blank">Istio <code>PeerAuthentication</code> resource</a>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-YAML" data-lang="YAML"><span class="line"><span class="cl"><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;security.istio.io/v1beta1&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;PeerAuthentication&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">metadata</span><span class="p">:</span><span class="w">
